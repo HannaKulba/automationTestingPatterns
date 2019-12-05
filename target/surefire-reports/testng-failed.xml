@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Structure Patterns Suite]" parallel="true">
+  <test name="Use page object pattern(failed)" parallel="true">
+    <classes>
+      <class name="tests.structurePatternTests.PageObjectPatternTests">
+        <methods>
+          <include name="checkLastName"/>
+          <include name="setup"/>
+          <include name="checkTaxID"/>
+          <include name="checkFirstName"/>
+          <include name="tearDown"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- tests.structurePatternTests.PageObjectPatternTests -->
+    </classes>
+  </test> <!-- Use page object pattern(failed) -->
+</suite> <!-- Failed suite [Structure Patterns Suite] -->

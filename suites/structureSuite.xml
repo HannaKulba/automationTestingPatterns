@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Structure Patterns Suite" parallel="true" thread-count="1" configfailurepolicy="continue">
+
+    <!--<test name="Use page object pattern">-->
+        <!--<classes>-->
+            <!--<class name="tests.structurePatternTests.PageObjectPatternTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use page factory pattern">-->
+        <!--<classes>-->
+            <!--<class name="tests.structurePatternTests.PageFactoryPatternTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use page element pattern">-->
+        <!--<classes>-->
+            <!--<class name="tests.structurePatternTests.PageElementPatternTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Use fluent interface pattern">
+        <classes>
+            <class name="tests.structurePatternTests.FluentInterfacePatternTests"/>
+        </classes>
+    </test>
+
+    <!--<test name="Use loadable component pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.LoadableComponentPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use strategy pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.StrategyPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+</suite>
