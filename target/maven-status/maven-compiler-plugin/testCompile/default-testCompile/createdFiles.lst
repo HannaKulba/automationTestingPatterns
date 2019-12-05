@@ -1,4 +1,0 @@
-patterns\structure\PageObject\BackendPage.class
-tests\BasicTestsSettings.class
-patterns\structure\PageObject\FrontendPage.class
-tests\structurePatternTests\PageObjectPatternTests.class
