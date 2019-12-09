@@ -9,7 +9,7 @@ import utils.Urls;
 public class BasePageObject {
     protected WebDriver driver;
 
-    protected BasePageObject(WebDriver driver) {
+    public BasePageObject(WebDriver driver) {
         this.driver = driver;
     }
 
