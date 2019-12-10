@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Data Patterns Suite" parallel="true" thread-count="1" configfailurepolicy="continue">
+
+    <!--<test name="Use data provider pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.DataProviderPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use value object pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.DataProviderPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use data provider pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.ValueObjectPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use builder pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.BuilderPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use assert object pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.AssertObjectPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use object pool pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.ObjectPoolPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>

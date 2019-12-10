@@ -10,9 +10,9 @@
     <!--</test>-->
 
     <!--<test name="Use page factory pattern">-->
-        <!--<classes>-->
-            <!--<class name="tests.structurePatternTests.PageFactoryPatternTests"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.PageFactoryPatternTests"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="Use page element pattern">-->
@@ -22,15 +22,15 @@
     <!--</test>-->
 
     <!--<test name="Use fluent interface pattern">-->
-        <!--<classes>-->
-            <!--<class name="tests.structurePatternTests.FluentInterfacePatternTests"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.FluentInterfacePatternTests"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="Use loadable component pattern">-->
-        <!--<classes>-->
-            <!--<class name="tests.structurePatternTests.LoadableComponentPatternTests"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.LoadableComponentPatternTests"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
     <test name="Use strategy pattern">

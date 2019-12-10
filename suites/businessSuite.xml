@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Business involvement Patterns Suite" parallel="true" thread-count="1" configfailurepolicy="continue">
+
+    <!--<test name="Use keyword driven pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.businessPatternTests.KeywordPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use behaviour specification pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.businessPatternTests.BehaviourPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Use steps pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.businessPatternTests.StepsPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>

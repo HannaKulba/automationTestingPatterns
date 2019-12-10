@@ -1,4 +1,12 @@
 package patterns.structure.Strategy;
 
-public class CreatePageRestStrategy {
+import utils.IStrategy;
+
+import java.util.Map;
+
+public class CreatePageRestStrategy implements IStrategy {
+    @Override
+    public void createAccount(Map<String, String> loginData) {
+
+    }
 }
