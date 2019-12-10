@@ -31,6 +31,10 @@ public class BasePageObject {
 
     public void selectOptionByName(By locator, String option) {
         WebElement elem = driver.findElement(locator);
+        selectOptionByName(elem, option);
+    }
+
+    public void selectOptionByName(WebElement elem, String option) {
         Select select = new Select(elem);
         select.selectByVisibleText(option);
     }

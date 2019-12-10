@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import patterns.BasePageObject;
 import utils.Locator;
 import utils.Urls;
 
@@ -48,20 +49,17 @@ public class CreatePageFactory {
     private WebElement createAccButton;
 
     private WebDriver driver;
+    private BasePageObject basePage;
 
     public CreatePageFactory(WebDriver driver) {
         this.driver = driver;
         //elements initialization in constructor
         PageFactory.initElements(driver, this);
+        basePage = new BasePageObject(driver);
     }
 
-    public void navigateTo(Urls URL) {
-        driver.get(URL.getURL());
-    }
-
-    public void selectOptionByName(WebElement elem, String option) {
-        Select select = new Select(elem);
-        select.selectByVisibleText(option);
+    public void navigateTo(Urls url) {
+        basePage.navigateTo(url.getURL());
     }
 
     public void createAccount(Map<String, String> dataMap) {
@@ -72,7 +70,7 @@ public class CreatePageFactory {
         address1_elem.sendKeys(dataMap.get("address1"));
         postcode_elem.sendKeys(dataMap.get("postcode"));
         city_elem.sendKeys(dataMap.get("city"));
-        selectOptionByName(country_elem, dataMap.get("country"));
+        basePage.selectOptionByName(country_elem, dataMap.get("country"));
         email_elem.sendKeys(dataMap.get("email") + Math.random());
         phone_elem.sendKeys(dataMap.get("phone"));
         password_elem.sendKeys(dataMap.get("password"));
