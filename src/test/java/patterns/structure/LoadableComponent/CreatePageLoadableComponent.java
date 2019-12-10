@@ -1,10 +1,14 @@
 package patterns.structure.LoadableComponent;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import patterns.BasePageObject;
 import utils.Urls;
 import utils.WebPageElement;
+
+import java.util.Map;
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -13,16 +17,19 @@ public class CreatePageLoadableComponent extends LoadableComponent<CreatePageLoa
     private String createAccURL = Urls.createAccountURL.getURL();
     private BasePageObject basePage;
     private LoadableComponent<HomePageLoadableComponent> parent;
+    private WebDriverWait wait;
 
     public CreatePageLoadableComponent(WebDriver driver, LoadableComponent<HomePageLoadableComponent> parent) {
         this.driver = driver;
         basePage = new BasePageObject(driver);
         this.parent = parent;
+        this.wait = new WebDriverWait(driver, 10, 500);
     }
 
     @Override
     protected void load() {
-        parent.get().goToLoginPage();
+        parent.get().goToCreatePage();
+        wait.until(ExpectedConditions.titleContains("Create Account"));
     }
 
     @Override
@@ -78,19 +85,18 @@ public class CreatePageLoadableComponent extends LoadableComponent<CreatePageLoa
         basePage.selectOptionByName(WebPageElement.country, countryName);
     }
 
-    public void createAccount(String taxID, String firstName, String lastName, String address1, String postcode,
-                              String city, String countryName, String email, String phone, String password) {
-        enterTaxID(taxID);
-        enterFirstName(firstName);
-        enterLastName(lastName);
-        enterAddress1(address1);
-        enterPostcode(postcode);
-        enterCity(city);
-        selectCountry(countryName);
-        enterEmail(email);
-        enterPhone(phone);
-        enterPassword(password);
-        enterConfirmedPassword(password);
+    public void createAccount(Map<String, String> dataMap) {
+        enterTaxID(dataMap.get("taxID"));
+        enterFirstName(dataMap.get("firstName"));
+        enterLastName(dataMap.get("lastName"));
+        enterAddress1(dataMap.get("address1"));
+        enterPostcode(dataMap.get("postcode"));
+        enterCity(dataMap.get("city"));
+        selectCountry(dataMap.get("country"));
+        enterEmail(dataMap.get("email") + Math.random());
+        enterPhone(dataMap.get("phone"));
+        enterPassword(dataMap.get("password"));
+        enterConfirmedPassword(dataMap.get("password"));
         clickOnCreateAccButton();
     }
 }

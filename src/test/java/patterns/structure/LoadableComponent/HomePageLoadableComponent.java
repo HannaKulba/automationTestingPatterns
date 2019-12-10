@@ -30,7 +30,7 @@ public class HomePageLoadableComponent extends LoadableComponent<HomePageLoadabl
         assertTrue("HomePage is not loaded!", driver.getCurrentUrl().contains(homePageURL));
     }
 
-    public void goToLoginPage() {
+    public void goToCreatePage() {
         basePage.clickOnButton(WebPageElement.newCustomer);
     }
 }

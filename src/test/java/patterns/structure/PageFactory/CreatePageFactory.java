@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.Select;
 import utils.Locator;
 import utils.Urls;
 
+import java.util.Map;
+
 public class CreatePageFactory {
     @FindBy(name = Locator.taxID)
     WebElement taxID_elem;
@@ -62,20 +64,19 @@ public class CreatePageFactory {
         select.selectByVisibleText(option);
     }
 
-    public void createAccount(String taxID, String firstName, String lastName, String address1, String postcode,
-                              String city, String countryName, String email, String phone, String password) {
+    public void createAccount(Map<String, String> dataMap) {
         navigateTo(Urls.createAccountURL);
-        taxID_elem.sendKeys(taxID);
-        firstName_elem.sendKeys(firstName);
-        lastName_elem.sendKeys(lastName);
-        address1_elem.sendKeys(address1);
-        postcode_elem.sendKeys(postcode);
-        city_elem.sendKeys(city);
-        selectOptionByName(country_elem, countryName);
-        email_elem.sendKeys(email);
-        phone_elem.sendKeys(phone);
-        password_elem.sendKeys(password);
-        confirmedPassword_elem.sendKeys(password);
+        taxID_elem.sendKeys(dataMap.get("taxID"));
+        firstName_elem.sendKeys(dataMap.get("firstName"));
+        lastName_elem.sendKeys(dataMap.get("lastName"));
+        address1_elem.sendKeys(dataMap.get("address1"));
+        postcode_elem.sendKeys(dataMap.get("postcode"));
+        city_elem.sendKeys(dataMap.get("city"));
+        selectOptionByName(country_elem, dataMap.get("country"));
+        email_elem.sendKeys(dataMap.get("email") + Math.random());
+        phone_elem.sendKeys(dataMap.get("phone"));
+        password_elem.sendKeys(dataMap.get("password"));
+        confirmedPassword_elem.sendKeys(dataMap.get("password"));
         createAccButton.click();
     }
 

@@ -5,6 +5,8 @@ import patterns.BasePageObject;
 import utils.Urls;
 import utils.WebPageElement;
 
+import java.util.Map;
+
 public class CreatePage extends BasePageObject {
 
     public CreatePage(WebDriver driver) {
@@ -59,20 +61,19 @@ public class CreatePage extends BasePageObject {
         selectOptionByName(WebPageElement.country, countryName);
     }
 
-    public void createAccount(String taxID, String firstName, String lastName, String address1, String postcode,
-                              String city, String countryName, String email, String phone, String password) {
+    public void createAccount(Map<String, String> dataMap) {
         navigateTo(Urls.createAccountURL);
-        enterTaxID(taxID);
-        enterFirstName(firstName);
-        enterLastName(lastName);
-        enterAddress1(address1);
-        enterPostcode(postcode);
-        enterCity(city);
-        selectCountry(countryName);
-        enterEmail(email);
-        enterPhone(phone);
-        enterPassword(password);
-        enterConfirmedPassword(password);
+        enterTaxID(dataMap.get("taxID"));
+        enterFirstName(dataMap.get("firstName"));
+        enterLastName(dataMap.get("lastName"));
+        enterAddress1(dataMap.get("address1"));
+        enterPostcode(dataMap.get("postcode"));
+        enterCity(dataMap.get("city"));
+        selectCountry(dataMap.get("country"));
+        enterEmail(dataMap.get("email") + Math.random());
+        enterPhone(dataMap.get("phone"));
+        enterPassword(dataMap.get("password"));
+        enterConfirmedPassword(dataMap.get("password"));
         clickOnCreateAccButton();
     }
 

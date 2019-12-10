@@ -28,10 +28,6 @@ public class ProfilePageLoadableComponent extends LoadableComponent<ProfilePageL
         assertTrue("Profile page is not loaded!", this.driver.getCurrentUrl().contains(profileURL));
     }
 
-    public void navigateTo() {
-        load();
-    }
-
     public String getTaxID() {
         return basePage.getValue(WebPageElement.taxID);
     }

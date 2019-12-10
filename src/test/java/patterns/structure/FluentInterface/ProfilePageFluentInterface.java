@@ -18,6 +18,11 @@ public class ProfilePageFluentInterface extends BasePageObject {
         return this;
     }
 
+    public ProfilePageFluentInterface verifyResultIsTrue(String expected) {
+        Assert.assertTrue(actual.contains(expected), "Actual and expected values are not match.");
+        return this;
+    }
+
     public ProfilePageFluentInterface getTaxID() {
         actual = getValue(WebPageElement.taxID);
         return this;
