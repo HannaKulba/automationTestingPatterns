@@ -14,7 +14,8 @@ public class CreatePageWebStrategy extends BasePageObject implements IStrategy {
     }
 
     @Override
-    public void createAccount(Map<String, String> loginData) {
+    public Map createAccount(Map<String, String> loginData) {
+        String email = loginData.get("email") + Math.random();
         navigateTo(Urls.createAccountURL);
         enterTaxID(loginData.get("taxID"));
         enterFirstName(loginData.get("firstName"));
@@ -23,11 +24,14 @@ public class CreatePageWebStrategy extends BasePageObject implements IStrategy {
         enterPostcode(loginData.get("postcode"));
         enterCity(loginData.get("city"));
         selectCountry(loginData.get("country"));
-        enterEmail(loginData.get("email") + Math.random());
+        enterEmail(email);
         enterPhone(loginData.get("phone"));
         enterPassword(loginData.get("password"));
         enterConfirmedPassword(loginData.get("password"));
         clickOnCreateAccButton();
+
+        loginData.put("email", email);
+        return loginData;
     }
 
     private void enterTaxID(String text) {
