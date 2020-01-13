@@ -1,11 +1,11 @@
-package patterns.structure.PageObject;
+package patterns.structure.Strategy;
 
 import org.openqa.selenium.WebDriver;
-import patterns.BaseAccountPageObject;
+import patterns.BasePageObject;
 import utils.WebPageElement;
 
-public class ProfilePage extends BaseAccountPageObject {
-    public ProfilePage(WebDriver driver) {
+public class ProfilePageWebStrategy extends BasePageObject {
+    public ProfilePageWebStrategy(WebDriver driver) {
         super(driver);
     }
 
@@ -44,4 +44,5 @@ public class ProfilePage extends BaseAccountPageObject {
     public String getPhone() {
         return getValue(WebPageElement.phone);
     }
+
 }

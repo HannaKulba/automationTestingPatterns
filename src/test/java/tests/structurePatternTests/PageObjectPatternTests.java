@@ -7,7 +7,6 @@ import patterns.structure.PageObject.CreatePage;
 import patterns.structure.PageObject.ProfilePage;
 import tests.BasicTestsSettings;
 import utils.LoginData;
-import utils.Urls;
 
 
 public class PageObjectPatternTests extends BasicTestsSettings {
@@ -19,7 +18,7 @@ public class PageObjectPatternTests extends BasicTestsSettings {
         createPage = new CreatePage(driver);
         profilePage = new ProfilePage(driver);
         createPage.createAccount(LoginData.dataMap);
-        profilePage.navigateTo(Urls.editAccountURL);
+        profilePage.navigateToProfilePage();
     }
 
     @Test()

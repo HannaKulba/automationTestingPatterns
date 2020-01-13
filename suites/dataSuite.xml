@@ -10,22 +10,16 @@
     <!--</test>-->
 
     <!--<test name="Use value object pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.dataPatternTests.DataProviderPatternTests"/>-->
-    <!--</classes>-->
+        <!--<classes>-->
+            <!--<class name="tests.dataPatternTests.ValueObjectPatternTests"/>-->
+        <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Use data provider pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.dataPatternTests.ValueObjectPatternTests"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-
-    <!--<test name="Use builder pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.dataPatternTests.BuilderPatternTests"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Use builder pattern">
+        <classes>
+            <class name="tests.dataPatternTests.BuilderPatternTests"/>
+        </classes>
+    </test>
 
     <!--<test name="Use assert object pattern">-->
     <!--<classes>-->

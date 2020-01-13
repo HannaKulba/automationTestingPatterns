@@ -2,10 +2,11 @@ package patterns.structure.FluentInterface;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import patterns.BaseAccountPageObject;
 import patterns.BasePageObject;
 import utils.WebPageElement;
 
-public class ProfilePageFluentInterface extends BasePageObject {
+public class ProfilePageFluentInterface extends BaseAccountPageObject {
 
     private String actual;
 

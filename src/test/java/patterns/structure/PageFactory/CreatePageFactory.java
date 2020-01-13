@@ -4,14 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import patterns.BasePageObject;
+import patterns.BaseAccountPageObject;
 import utils.Locator;
-import utils.Urls;
 
 import java.util.Map;
 
-public class CreatePageFactory {
+public class CreatePageFactory extends BaseAccountPageObject {
     @FindBy(name = Locator.taxID)
     WebElement taxID_elem;
 
@@ -48,29 +46,21 @@ public class CreatePageFactory {
     @FindBy(name = Locator.createAccButton)
     private WebElement createAccButton;
 
-    private WebDriver driver;
-    private BasePageObject basePage;
-
     public CreatePageFactory(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
         //elements initialization in constructor
         PageFactory.initElements(driver, this);
-        basePage = new BasePageObject(driver);
-    }
-
-    public void navigateTo(Urls url) {
-        basePage.navigateTo(url.getURL());
     }
 
     public void createAccount(Map<String, String> dataMap) {
-        navigateTo(Urls.createAccountURL);
+        navigateToCreateAccountPage();
         taxID_elem.sendKeys(dataMap.get("taxID"));
         firstName_elem.sendKeys(dataMap.get("firstName"));
         lastName_elem.sendKeys(dataMap.get("lastName"));
         address1_elem.sendKeys(dataMap.get("address1"));
         postcode_elem.sendKeys(dataMap.get("postcode"));
         city_elem.sendKeys(dataMap.get("city"));
-        basePage.selectOptionByName(country_elem, dataMap.get("country"));
+        selectOptionByName(country_elem, dataMap.get("country"));
         email_elem.sendKeys(dataMap.get("email") + Math.random());
         phone_elem.sendKeys(dataMap.get("phone"));
         password_elem.sendKeys(dataMap.get("password"));

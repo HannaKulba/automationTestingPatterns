@@ -3,7 +3,6 @@ package patterns.structure.Strategy;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
 import utils.IStrategy;
-import utils.Locator;
 import utils.Urls;
 
 import java.util.Map;
@@ -34,9 +33,5 @@ public class CreatePageRestStrategy implements IStrategy {
         return resp.cookies();
     }
 
-    public String getValue(Map<String, String> cookies, String locator) {
-        Response resp = RestAssured.given().cookies(cookies).get(Urls.editAccountURL.getURL());
-        //System.out.println(resp.getBody().htmlPath().get("**.find {it.@name == '" + locator + "'}.@value"));
-        return resp.getBody().htmlPath().get("**.find {it.@name == '" + locator + "'}.@value");
-    }
+
 }

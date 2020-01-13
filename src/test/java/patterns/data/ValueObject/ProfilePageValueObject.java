@@ -1,11 +1,12 @@
-package patterns.structure.PageObject;
+package patterns.data.ValueObject;
 
 import org.openqa.selenium.WebDriver;
 import patterns.BaseAccountPageObject;
 import utils.WebPageElement;
 
-public class ProfilePage extends BaseAccountPageObject {
-    public ProfilePage(WebDriver driver) {
+public class ProfilePageValueObject extends BaseAccountPageObject {
+
+    public ProfilePageValueObject(WebDriver driver) {
         super(driver);
     }
 

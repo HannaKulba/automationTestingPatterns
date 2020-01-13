@@ -1,78 +1,77 @@
 package patterns.structure.FluentInterface;
 
 import org.openqa.selenium.WebDriver;
-import patterns.BasePageObject;
+import patterns.BaseAccountPageObject;
 import utils.Urls;
-import utils.WebPageElement;
 
-public class CreatePageFluentInterface extends BasePageObject {
+public class CreatePageFluentInterface extends BaseAccountPageObject {
 
     public CreatePageFluentInterface(WebDriver driver) {
         super(driver);
     }
 
     public CreatePageFluentInterface openPage(Urls URL) {
-        navigateTo(URL);
+        navigateToCreateAccountPage();
         return this;
     }
 
-    public CreatePageFluentInterface enterTaxID(String text) {
-        enterText(WebPageElement.taxID, text);
+    public CreatePageFluentInterface enter_TaxID(String text) {
+        enterTaxID(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterFirstName(String text) {
-        enterText(WebPageElement.firstname, text);
+    public CreatePageFluentInterface enter_FirstName(String text) {
+        enterFirstName(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterLastName(String text) {
-        enterText(WebPageElement.lastname, text);
+    public CreatePageFluentInterface enter_LastName(String text) {
+        enterLastName(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterAddress1(String text) {
-        enterText(WebPageElement.address1, text);
+    public CreatePageFluentInterface enter_Address1(String text) {
+        enterAddress1(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterPostcode(String text) {
-        enterText(WebPageElement.postcode, text);
+    public CreatePageFluentInterface enter_Postcode(String text) {
+        enterPostcode(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterCity(String text) {
-        enterText(WebPageElement.city, text);
+    public CreatePageFluentInterface enter_City(String text) {
+        enterCity(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterEmail(String text) {
-        enterText(WebPageElement.email, text);
+    public CreatePageFluentInterface enter_Email(String text) {
+        enterEmail(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterPhone(String text) {
-        enterText(WebPageElement.phone, text);
+    public CreatePageFluentInterface enter_Phone(String text) {
+        enterPhone(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterPassword(String text) {
-        enterText(WebPageElement.password, text);
+    public CreatePageFluentInterface enter_Password(String text) {
+        enterPassword(text);
         return this;
     }
 
-    public CreatePageFluentInterface enterConfirmedPassword(String text) {
-        enterText(WebPageElement.confirmedPassword, text);
+    public CreatePageFluentInterface enter_ConfirmedPassword(String text) {
+        enterConfirmedPassword(text);
         return this;
     }
 
-    public CreatePageFluentInterface clickOnCreateAccButton() {
-        clickOnButton(WebPageElement.createAccButton);
+    public CreatePageFluentInterface click_OnCreateAccButton() {
+        clickOnCreateAccButton();
         return this;
     }
 
-    public CreatePageFluentInterface selectCountry(String countryName) {
-        selectOptionByName(WebPageElement.country, countryName);
+    public CreatePageFluentInterface select_Country(String countryName) {
+        selectCountry(countryName);
         return this;
     }
 

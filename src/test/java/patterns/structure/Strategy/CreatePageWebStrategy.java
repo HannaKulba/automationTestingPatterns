@@ -1,14 +1,13 @@
 package patterns.structure.Strategy;
 
 import org.openqa.selenium.WebDriver;
-import patterns.BasePageObject;
+import patterns.BaseAccountPageObject;
 import utils.IStrategy;
 import utils.Urls;
-import utils.WebPageElement;
 
 import java.util.Map;
 
-public class CreatePageWebStrategy extends BasePageObject implements IStrategy {
+public class CreatePageWebStrategy extends BaseAccountPageObject implements IStrategy {
     public CreatePageWebStrategy(WebDriver driver) {
         super(driver);
     }
@@ -30,55 +29,7 @@ public class CreatePageWebStrategy extends BasePageObject implements IStrategy {
         enterConfirmedPassword(loginData.get("password"));
         clickOnCreateAccButton();
 
-        loginData.put("email", email);
+        //loginData.put("email", email);
         return loginData;
-    }
-
-    private void enterTaxID(String text) {
-        enterText(WebPageElement.taxID, text);
-    }
-
-    private void enterFirstName(String text) {
-        enterText(WebPageElement.firstname, text);
-    }
-
-    private void enterLastName(String text) {
-        enterText(WebPageElement.lastname, text);
-    }
-
-    private void enterAddress1(String text) {
-        enterText(WebPageElement.address1, text);
-    }
-
-    private void enterPostcode(String text) {
-        enterText(WebPageElement.postcode, text);
-    }
-
-    private void enterCity(String text) {
-        enterText(WebPageElement.city, text);
-    }
-
-    private void enterEmail(String text) {
-        enterText(WebPageElement.email, text);
-    }
-
-    private void enterPhone(String text) {
-        enterText(WebPageElement.phone, text);
-    }
-
-    private void enterPassword(String text) {
-        enterText(WebPageElement.password, text);
-    }
-
-    private void enterConfirmedPassword(String text) {
-        enterText(WebPageElement.confirmedPassword, text);
-    }
-
-    private void clickOnCreateAccButton() {
-        clickOnButton(WebPageElement.createAccButton);
-    }
-
-    private void selectCountry(String countryName) {
-        selectOptionByName(WebPageElement.country, countryName);
     }
 }

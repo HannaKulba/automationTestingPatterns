@@ -39,10 +39,10 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <test name="Use strategy pattern (rest)">
-        <classes>
-            <class name="tests.structurePatternTests.StrategyPatternRestTests"/>
-        </classes>
-    </test>
+    <!--<test name="Use strategy pattern (rest)">-->
+    <!--<classes>-->
+    <!--<class name="tests.structurePatternTests.StrategyPatternRestTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
 </suite>

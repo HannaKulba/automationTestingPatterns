@@ -18,7 +18,7 @@ public class PageFactoryPatternTests extends BasicTestsSettings {
         createPage = new CreatePageFactory(driver);
         profilePage = new ProfilePageFactory(driver);
         createPage.createAccount(LoginData.dataMap);
-        profilePage.navigateTo(Urls.editAccountURL);
+        profilePage.navigateToProfilePage();
     }
 
     @Test()

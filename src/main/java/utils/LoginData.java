@@ -1,6 +1,5 @@
 package utils;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,9 +15,9 @@ public class LoginData {
 //    public static String phone = "+375334445567";
 //    public static String pass = "JohnNewman2019";
 
-    public static Map<String, String> dataMap =  createDataMap();
+    public static Map<String, String> dataMap = createDataMap();
 
-    private static Map<String, String> createDataMap(){
+    private static Map<String, String> createDataMap() {
         Map<String, String> result = new TreeMap<>();
         result.put("taxID", "546383");
         result.put("firstName", "John");

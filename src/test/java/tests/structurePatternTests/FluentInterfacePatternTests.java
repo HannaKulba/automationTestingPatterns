@@ -17,19 +17,19 @@ public class FluentInterfacePatternTests extends BasicTestsSettings {
         createPage = new CreatePageFluentInterface(driver);
         profilePage = new ProfilePageFluentInterface(driver);
         createPage.openPage(Urls.createAccountURL)
-                .enterTaxID(LoginData.dataMap.get("taxID"))
-                .enterFirstName(LoginData.dataMap.get("firstName"))
-                .enterLastName(LoginData.dataMap.get("lastName"))
-                .enterAddress1(LoginData.dataMap.get("address1"))
-                .enterPostcode(LoginData.dataMap.get("postcode"))
-                .enterCity(LoginData.dataMap.get("city"))
-                .enterEmail(LoginData.dataMap.get("email") + Math.random())
-                .selectCountry(LoginData.dataMap.get("country"))
-                .enterPhone(LoginData.dataMap.get("phone"))
-                .enterPassword(LoginData.dataMap.get("password"))
-                .enterConfirmedPassword(LoginData.dataMap.get("password"))
-                .clickOnCreateAccButton();
-        profilePage.navigateTo(Urls.editAccountURL);
+                .enter_TaxID(LoginData.dataMap.get("taxID"))
+                .enter_FirstName(LoginData.dataMap.get("firstName"))
+                .enter_LastName(LoginData.dataMap.get("lastName"))
+                .enter_Address1(LoginData.dataMap.get("address1"))
+                .enter_Postcode(LoginData.dataMap.get("postcode"))
+                .enter_City(LoginData.dataMap.get("city"))
+                .enter_Email(LoginData.dataMap.get("email") + Math.random())
+                .select_Country(LoginData.dataMap.get("country"))
+                .enter_Phone(LoginData.dataMap.get("phone"))
+                .enter_Password(LoginData.dataMap.get("password"))
+                .enter_ConfirmedPassword(LoginData.dataMap.get("password"))
+                .click_OnCreateAccButton();
+        profilePage.navigateToProfilePage();
     }
 
     @Test()
