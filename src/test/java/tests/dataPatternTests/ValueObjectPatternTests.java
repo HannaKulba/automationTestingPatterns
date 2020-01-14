@@ -15,7 +15,7 @@ public class ValueObjectPatternTests extends BasicTestsSettings {
 
     @BeforeTest
     public void testSetUp_vo() {
-        user = new User(1);
+        user = User.getUser(4);
         createPage = new CreatePageValueObject(driver);
         profilePage = new ProfilePageValueObject(driver);
         createPage.createAccount(user);

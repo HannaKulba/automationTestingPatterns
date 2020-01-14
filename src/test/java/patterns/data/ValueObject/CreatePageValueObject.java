@@ -9,7 +9,7 @@ public class CreatePageValueObject extends BaseAccountPageObject {
         super(driver);
     }
 
-    public void createAccount(User user){
+    public void createAccount(User user) {
         navigateToCreateAccountPage();
         enterTaxID(user.getTaxID());
         enterFirstName(user.getFirstName());
