@@ -27,15 +27,17 @@
     <!--</classes>-->
     <!--</test>-->
 
+    <!--<test name="Use data registry pattern">-->
+    <!--<classes>-->
+    <!--<class name="tests.dataPatternTests.DataRegistryPatternTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
     <test name="Use object pool pattern">
         <classes>
             <class name="tests.dataPatternTests.ObjectPoolPatternTests"/>
         </classes>
     </test>
 
-    <!--<test name="Use data registry pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.dataPatternTests.DataRegistryPatternTests"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+
 </suite>
