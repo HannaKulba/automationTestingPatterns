@@ -2,11 +2,10 @@ package patterns.structure.FluentInterface;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import patterns.BaseAccountPageObject;
-import patterns.BasePageObject;
+import patterns.BaseProfilePageObject;
 import utils.WebPageElement;
 
-public class ProfilePageFluentInterface extends BaseAccountPageObject {
+public class ProfilePageFluentInterface extends BaseProfilePageObject {
 
     private String actual;
 
@@ -24,47 +23,47 @@ public class ProfilePageFluentInterface extends BaseAccountPageObject {
         return this;
     }
 
-    public ProfilePageFluentInterface getTaxID() {
+    public ProfilePageFluentInterface get_TaxID() {
         actual = getValue(WebPageElement.taxID);
         return this;
     }
 
-    public ProfilePageFluentInterface getFirstName() {
+    public ProfilePageFluentInterface get_FirstName() {
         actual = getValue(WebPageElement.firstname);
         return this;
     }
 
-    public ProfilePageFluentInterface getLastName() {
+    public ProfilePageFluentInterface get_LastName() {
         actual = getValue(WebPageElement.lastname);
         return this;
     }
 
-    public ProfilePageFluentInterface getAddress1() {
+    public ProfilePageFluentInterface get_Address1() {
         actual = getValue(WebPageElement.address1);
         return this;
     }
 
-    public ProfilePageFluentInterface getPostCode() {
+    public ProfilePageFluentInterface get_PostCode() {
         actual = getValue(WebPageElement.postcode);
         return this;
     }
 
-    public ProfilePageFluentInterface getCity() {
+    public ProfilePageFluentInterface get_City() {
         actual = getValue(WebPageElement.city);
         return this;
     }
 
-    public ProfilePageFluentInterface getCountry() {
+    public ProfilePageFluentInterface get_Country() {
         actual = getText(WebPageElement.chosenCountry);
         return this;
     }
 
-    public ProfilePageFluentInterface getEmail() {
+    public ProfilePageFluentInterface get_Email() {
         actual = getValue(WebPageElement.email);
         return this;
     }
 
-    public ProfilePageFluentInterface getPhone() {
+    public ProfilePageFluentInterface get_Phone() {
         actual = getValue(WebPageElement.phone);
         return this;
     }

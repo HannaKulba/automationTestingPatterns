@@ -58,19 +58,13 @@ public class BaseAccountPageObject extends BasePageObject {
         selectOptionByName(WebPageElement.country, countryName);
     }
 
-    public void navigateToProfilePage(){
-        navigateTo(Urls.editAccountURL);
-    }
-
-    public void navigateToCreateAccountPage(){
+    public void navigateToCreateAccountPage() {
         navigateTo(Urls.createAccountURL);
     }
 
-    public void navigateToHomePage(){
+    public void navigateToHomePage() {
         navigateTo(Urls.homePageURL);
     }
 
-    public void logout(){
-        navigateTo(Urls.logoutURL);
-    }
+
 }

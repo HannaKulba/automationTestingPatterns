@@ -15,12 +15,11 @@ public class LoadableComponentPatternTests extends BasicTestsSettings {
     private ProfilePageLoadableComponent profilePage;
 
     @BeforeTest
-    public void testSetUp_lc() throws InterruptedException {
+    public void testSetUp_lc() {
         homePage = new HomePageLoadableComponent(driver);
         createPage = new CreatePageLoadableComponent(driver, homePage);
         profilePage = new ProfilePageLoadableComponent(driver);
         createPage.get();
-        //Thread.sleep(500);
         createPage.createAccount(LoginData.dataMap);
         profilePage.get();
     }

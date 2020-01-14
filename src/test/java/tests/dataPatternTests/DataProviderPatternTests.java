@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import patterns.structure.PageObject.CreatePage;
+import patterns.structure.PageObject.ProfilePage;
 import tests.BasicTestsSettings;
 
 import java.io.FileReader;
@@ -15,6 +16,7 @@ import java.util.TreeMap;
 
 public class DataProviderPatternTests extends BasicTestsSettings {
     private CreatePage createPage;
+    private ProfilePage profilePage;
     private String pathToCSV = "./src/main/resources/Data_CreateAccounts.csv";
 
     private Map<String, String> getMap(String taxID, String firstName, String lastname, String address1, String postcode, String city, String country, String email, String phone, String password) {
@@ -35,6 +37,7 @@ public class DataProviderPatternTests extends BasicTestsSettings {
     @BeforeTest
     public void testSetUp_dp() {
         createPage = new CreatePage(driver);
+        profilePage = new ProfilePage(driver);
     }
 
     @DataProvider
@@ -64,7 +67,7 @@ public class DataProviderPatternTests extends BasicTestsSettings {
 
         Map<String, String> dataMap = getMap(taxID, firstName, lastname, address1, postcode, city, country, email, phone, password);
         createPage.createAccount(dataMap);
-        createPage.logout();
+        profilePage.logout();
     }
 
 }

@@ -34,55 +34,55 @@ public class FluentInterfacePatternTests extends BasicTestsSettings {
 
     @Test()
     public void checkTaxID_fi() {
-        profilePage.getTaxID()
+        profilePage.get_TaxID()
                 .verifyResults(LoginData.dataMap.get("taxID"));
     }
 
     @Test
     public void checkFirstName_fi() {
-        profilePage.getFirstName()
+        profilePage.get_FirstName()
                 .verifyResults(LoginData.dataMap.get("firstName"));
     }
 
     @Test
     public void checkLastName_fi() {
-        profilePage.getLastName()
+        profilePage.get_LastName()
                 .verifyResults(LoginData.dataMap.get("lastName"));
     }
 
     @Test
     public void checkAddress1_fi() {
-        profilePage.getAddress1()
+        profilePage.get_Address1()
                 .verifyResults(LoginData.dataMap.get("address1"));
     }
 
     @Test
     public void checkPostcode_fi() {
-        profilePage.getPostCode()
+        profilePage.get_PostCode()
                 .verifyResults(LoginData.dataMap.get("postcode"));
     }
 
     @Test
     public void checkCity_fi() {
-        profilePage.getCity()
+        profilePage.get_City()
                 .verifyResults(LoginData.dataMap.get("city"));
     }
 
     @Test
     public void checkCountry_fi() {
-        profilePage.getCountry()
+        profilePage.get_Country()
                 .verifyResults(LoginData.dataMap.get("country"));
     }
 
     @Test
     public void checkEmail_fi() {
-        profilePage.getEmail()
+        profilePage.get_Email()
                 .verifyResultIsTrue(LoginData.dataMap.get("email"));
     }
 
     @Test
     public void checkPhone_fi() {
-        profilePage.getPhone()
+        profilePage.get_Phone()
                 .verifyResults(LoginData.dataMap.get("phone"));
     }
 }

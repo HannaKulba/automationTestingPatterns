@@ -3,22 +3,24 @@ package tests.structurePatternTests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import patterns.BaseProfilePageObject;
 import patterns.structure.PageFactory.CreatePageFactory;
 import patterns.structure.PageFactory.ProfilePageFactory;
 import tests.BasicTestsSettings;
 import utils.LoginData;
-import utils.Urls;
 
 public class PageFactoryPatternTests extends BasicTestsSettings {
     private CreatePageFactory createPage;
     private ProfilePageFactory profilePage;
+    private BaseProfilePageObject baseProfilePage;
 
     @BeforeTest
     public void testSetUp_f() {
         createPage = new CreatePageFactory(driver);
         profilePage = new ProfilePageFactory(driver);
+        baseProfilePage = new BaseProfilePageObject(driver);
         createPage.createAccount(LoginData.dataMap);
-        profilePage.navigateToProfilePage();
+        baseProfilePage.navigateToProfilePage();
     }
 
     @Test()

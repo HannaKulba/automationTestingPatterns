@@ -2,20 +2,19 @@ package patterns.structure.LoadableComponent;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.LoadableComponent;
-import patterns.BasePageObject;
+import patterns.BaseProfilePageObject;
 import utils.Urls;
-import utils.WebPageElement;
 
 import static org.testng.AssertJUnit.assertTrue;
 
 public class ProfilePageLoadableComponent extends LoadableComponent<ProfilePageLoadableComponent> {
     private WebDriver driver;
     private String profileURL = Urls.editAccountURL.getURL();
-    private BasePageObject basePage;
+    private BaseProfilePageObject baseProfilePage;
 
     public ProfilePageLoadableComponent(WebDriver driver) {
         this.driver = driver;
-        basePage = new BasePageObject(driver);
+        baseProfilePage = new BaseProfilePageObject(driver);
     }
 
     @Override
@@ -25,42 +24,42 @@ public class ProfilePageLoadableComponent extends LoadableComponent<ProfilePageL
 
     @Override
     protected void isLoaded() throws Error {
-        assertTrue("Profile page is not loaded!", this.driver.getCurrentUrl().contains(profileURL));
+        assertTrue("ProfilePageBuilder page is not loaded!", this.driver.getCurrentUrl().contains(profileURL));
     }
 
     public String getTaxID() {
-        return basePage.getValue(WebPageElement.taxID);
+        return baseProfilePage.getTaxID();
     }
 
     public String getFirstName() {
-        return basePage.getValue(WebPageElement.firstname);
+        return baseProfilePage.getFirstName();
     }
 
     public String getLastName() {
-        return basePage.getValue(WebPageElement.lastname);
+        return baseProfilePage.getLastName();
     }
 
     public String getAddress1() {
-        return basePage.getValue(WebPageElement.address1);
+        return baseProfilePage.getAddress1();
     }
 
     public String getPostCode() {
-        return basePage.getValue(WebPageElement.postcode);
+        return baseProfilePage.getPostCode();
     }
 
     public String getCity() {
-        return basePage.getValue(WebPageElement.city);
+        return baseProfilePage.getCity();
     }
 
     public String getCountry() {
-        return basePage.getText(WebPageElement.chosenCountry);
+        return baseProfilePage.getCountry();
     }
 
     public String getEmail() {
-        return basePage.getValue(WebPageElement.email);
+        return baseProfilePage.getEmail();
     }
 
     public String getPhone() {
-        return basePage.getValue(WebPageElement.phone);
+        return baseProfilePage.getPhone();
     }
 }
