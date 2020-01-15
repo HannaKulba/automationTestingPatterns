@@ -10,44 +10,44 @@ public class BaseAccountPageObject extends BasePageObject {
         super(driver);
     }
 
-    public void enterTaxID(String text) {
-        enterText(WebPageElement.taxID, text);
+    public void enterTaxID(String taxId) {
+        enterText(WebPageElement.taxID, taxId);
     }
 
-    public void enterFirstName(String text) {
-        enterText(WebPageElement.firstname, text);
+    public void enterFirstName(String firstName) {
+        enterText(WebPageElement.firstname, firstName);
     }
 
-    public void enterLastName(String text) {
-        enterText(WebPageElement.lastname, text);
+    public void enterLastName(String lastName) {
+        enterText(WebPageElement.lastname, lastName);
     }
 
-    public void enterAddress1(String text) {
-        enterText(WebPageElement.address1, text);
+    public void enterAddress1(String address1) {
+        enterText(WebPageElement.address1, address1);
     }
 
-    public void enterPostcode(String text) {
-        enterText(WebPageElement.postcode, text);
+    public void enterPostcode(String postcode) {
+        enterText(WebPageElement.postcode, postcode);
     }
 
-    public void enterCity(String text) {
-        enterText(WebPageElement.city, text);
+    public void enterCity(String city) {
+        enterText(WebPageElement.city, city);
     }
 
-    public void enterEmail(String text) {
-        enterText(WebPageElement.email, text);
+    public void enterEmail(String email) {
+        enterText(WebPageElement.email, email);
     }
 
-    public void enterPhone(String text) {
-        enterText(WebPageElement.phone, text);
+    public void enterPhone(String phone) {
+        enterText(WebPageElement.phone, phone);
     }
 
-    public void enterPassword(String text) {
-        enterText(WebPageElement.password, text);
+    public void enterPassword(String password) {
+        enterText(WebPageElement.password, password);
     }
 
-    public void enterConfirmedPassword(String text) {
-        enterText(WebPageElement.confirmedPassword, text);
+    public void enterConfirmedPassword(String password) {
+        enterText(WebPageElement.confirmedPassword, password);
     }
 
     public void clickOnCreateAccButton() {

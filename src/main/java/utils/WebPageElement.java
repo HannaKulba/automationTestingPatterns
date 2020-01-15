@@ -18,6 +18,9 @@ public class WebPageElement {
     public static By createAccButton = By.name(Locator.createAccButton);
     public static By chosenCountry = By.className(Locator.chosenCountry);
     public static By newCustomer = By.cssSelector(Locator.newCustomerLinkTag+":nth-child(5)");
+    public static By loginButton = By.name(Locator.loginButton);
+    public static By loginErrorMsg = By.className(Locator.loginErrorMsg);
+    public static By loginSuccessMsg = By.cssSelector(Locator.loginSuccessMsg);
 
     //for https://www.w3schools.com/html/html_tables.asp
     public static By table = By.id(Locator.tableID);

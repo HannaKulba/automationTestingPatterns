@@ -1,4 +1,10 @@
 package patterns.technical.Decorator;
 
-public class CreatePageDecorator {
+import org.openqa.selenium.WebDriver;
+import patterns.BaseAccountPageObject;
+
+public class CreatePageDecorator extends BaseAccountPageObject {
+    public CreatePageDecorator(WebDriver driver) {
+        super(driver);
+    }
 }

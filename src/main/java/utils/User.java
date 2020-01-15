@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class User {
     private String taxID;
@@ -123,9 +124,23 @@ public class User {
         user.setCity(result[5]);
         user.setCountry(result[6]);
         user.setEmail(result[7]);
-        user.setPhone(result[8]);
+        user.setPhone("+" + result[8]);
         user.setPassword(result[9]);
         return user;
+    }
+
+    public static User getUser(String username) {
+        String firstName = username.split(" ")[0];
+        String lastName = username.split(" ")[1];
+        List<User> users = getAllUsers();
+
+        for (User user : users) {
+            if (user.getFirstName().equals(firstName) && user.getLastName().equals(lastName)) {
+                return user;
+            }
+        }
+
+        return null;
     }
 
     public static List<User> getAllUsers() {

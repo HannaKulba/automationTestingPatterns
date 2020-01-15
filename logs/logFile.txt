@@ -1,0 +1,8 @@
+2020-01-15 16:18:26 INFO  Address:21 - address: 234567, Belarus, Gomel, ul. Sovieckaya, 21-56
+2020-01-15 16:18:26 INFO  Contacts:23 - e-mail: julia_20201212@gmail.com
+mobile: +375296542323
+2020-01-15 16:18:26 INFO  Julia:16 - Julia Sidorova
+2020-01-15 16:18:26 INFO  Address:21 - address: 23-567, Poland, Gdansk, ul. Pilsudskiego, 45-76
+2020-01-15 16:18:26 INFO  Contacts:23 - e-mail: tj_20241212@gmail.com
+mobile: +48225520000
+2020-01-15 16:18:26 INFO  Tomasz:15 - Tomasz Jackowski

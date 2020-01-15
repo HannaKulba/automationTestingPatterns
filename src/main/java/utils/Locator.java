@@ -16,6 +16,9 @@ public class Locator {
     public final static String createAccButton = "create_account";
     public final static String chosenCountry = "select2-selection__rendered";
     public final static String newCustomerLinkTag = "tr";
+    public final static String loginButton = "login";
+    public final static String loginErrorMsg = ".notice.errors";
+    public final static String loginSuccessMsg = "#notices > .notice.success";
 
     //for https://www.w3schools.com/html/html_tables.asp
     public final static String tableID = "customers";
