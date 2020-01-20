@@ -3,15 +3,15 @@
 
 <suite name="Technical Patterns Suite" parallel="true" thread-count="1" configfailurepolicy="continue">
 
-    <test name="Use decorator pattern">
+    <!--<test name="Use decorator pattern">-->
+        <!--<classes>-->
+            <!--<class name="tests.technicalPatternTests.DecoratorPatternTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Use proxy pattern">
         <classes>
-            <class name="tests.technicalPatternTests.DecoratorPatternTests"/>
+            <class name="tests.technicalPatternTests.ProxyPatternTests"/>
         </classes>
     </test>
-
-    <!--<test name="Use proxy pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.technicalPatternTests.ProxyPatternTests"/>-->
-    <!--</classes>-->
-    <!--</test>-->
 </suite>

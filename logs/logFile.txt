@@ -6,3 +6,15 @@ mobile: +375296542323
 2020-01-15 16:18:26 INFO  Contacts:23 - e-mail: tj_20241212@gmail.com
 mobile: +48225520000
 2020-01-15 16:18:26 INFO  Tomasz:15 - Tomasz Jackowski
+2020-01-16 10:03:47 INFO  Address:22 - address: 234567, Belarus, Gomel, ul. Sovieckaya, 21-56
+2020-01-16 10:03:47 INFO  Contacts:24 - e-mail: julia_20201212@gmail.com
+mobile: +375296542323
+2020-01-16 10:03:47 INFO  Julia:16 - Julia Sidorova
+2020-01-16 10:03:47 INFO  Address:22 - address: 567834, Russian Federation, Tver, ul. Lenina, 34-78
+2020-01-16 10:03:47 INFO  Contacts:24 - e-mail: petr_20211212@gmail.com
+mobile: +74967777777
+2020-01-16 10:03:47 INFO  Petr:15 - Petr Petrov
+2020-01-16 10:03:47 INFO  Address:22 - address: 23-567, Poland, Gdansk, ul. Pilsudskiego, 45-76
+2020-01-16 10:03:47 INFO  Contacts:24 - e-mail: tj_20241212@gmail.com
+mobile: +48225520000
+2020-01-16 10:03:47 INFO  Tomasz:15 - Tomasz Jackowski
