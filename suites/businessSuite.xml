@@ -3,11 +3,11 @@
 
 <suite name="Business involvement Patterns Suite" parallel="true" thread-count="1" configfailurepolicy="continue">
 
-    <!--<test name="Use keyword driven pattern">-->
-    <!--<classes>-->
-    <!--<class name="tests.businessPatternTests.KeywordPatternTests"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Use keyword driven pattern">
+        <classes>
+            <class name="tests.businessPatternTests.KeywordPatternTests"/>
+        </classes>
+    </test>
 
     <!--<test name="Use behaviour specification pattern">-->
     <!--<classes>-->

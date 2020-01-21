@@ -1,6 +1,6 @@
-taxID,firstName,lastName,address1,postcode,city,country,email,phone,password
-657000,Julia,Sidorova,"ul. Sovieckaya, 21-56",234567,Gomel,Belarus,julia_20201212@gmail.com,375296542323,GomelBelarus
-675800,Petr,Petrov,"ul. Lenina, 34-78",567834,Tver,Russian Federation,petr_20211212@gmail.com,74967777777,TverRussianFederation
-ESMdddddddD,Hulio,Eglesias,"La Rambla street, 345-6",31245,Madrid,Spain,hulio_20221212@gmail.com,34902012141,MadridSpain
-PLdddddddddd,Tomasz,Jackowski,"ul. Pilsudskiego, 45-76",23-567,Gdansk,Poland,tj_20241212@gmail.com,48225520000,GdanskPoland
-LVddddddddddd,Mark,Melnikaite,"Rigskaya street, 23-9",4799,Riga,Latvia,mark_mark_12@gmail.com,37167332151,RigaLatvia
+"taxID","firstName","lastName","address1","postcode","city","country","email","phone","password"
+"657000","Julia","Sidorova","ul. Sovieckaya 21-56","234567","Gomel","Belarus","julia_20201212@gmail.com","375296542323","GomelBelarus"
+"675800","Petr","Petrov","ul. Lenina 34-78","567834","Tver","Russian Federation","petr_20211212@gmail.com","74967777777","TverRussianFederation"
+"ESMdddddddD","Hulio","Eglesias","La Rambla street 345-6","31245","Madrid","Spain","hulio_20221212@gmail.com","34902012141","MadridSpain"
+"PLdddddddddd","Tomasz","Jackowski","ul. Pilsudskiego 45-76","23-567","Gdansk","Poland","tj_20241212@gmail.com","48225520000","GdanskPoland"
+"LVddddddddddd","Mark","Melnikaite","Rigskaya street 23-9","4799","Riga","Latvia","mark_mark_12@gmail.com","37167332151","RigaLatvia"

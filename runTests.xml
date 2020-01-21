@@ -6,8 +6,8 @@
     <suite-files>
         <!--<suite-file path="suites/structureSuite.xml"/>-->
         <!--<suite-file path="suites/dataSuite.xml"/>-->
-        <suite-file path="suites/technicalSuite.xml"/>
-        <!--<suite-file path="suites/businessSuite.xml"/>-->
+        <!--<suite-file path="suites/technicalSuite.xml"/>-->
+        <suite-file path="suites/businessSuite.xml"/>
     </suite-files>
 
 </suite>
