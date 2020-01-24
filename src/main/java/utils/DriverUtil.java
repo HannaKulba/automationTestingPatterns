@@ -1,28 +1,26 @@
-package tests;
+package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 
-import java.util.concurrent.TimeUnit;
+public class DriverUtil {
 
-public class BasicTestsSettings {
+    private WebDriver driver;
 
-    protected WebDriver driver;
-
-    @BeforeTest
-    public void setup() {
+    public void initializeChromeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
     }
 
-    @AfterTest
-    public void tearDown() {
+    public WebDriver getChromeDriver() {
+        return driver;
+    }
+
+    public void finishChromeDriver() {
         driver.quit();
     }
 }
