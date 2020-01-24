@@ -1,4 +1,13 @@
 package patterns.business.Keyword;
 
-public class CreatePageKeyword {
+import org.openqa.selenium.WebDriver;
+import patterns.BaseAccountPageObject;
+
+public class CreatePageKeyword extends BaseAccountPageObject {
+    public CreatePageKeyword(WebDriver driver) {
+        super(driver);
+    }
+
+
+
 }

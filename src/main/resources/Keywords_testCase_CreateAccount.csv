@@ -1,0 +1,14 @@
+Keyword_Step,Args
+navigateToCreateAccountPage,http://litecart.stqa.ru/ru/create_account
+enterTaxID,345678BY
+enterFirstName,Ivan
+enterLastName,Petroff
+enterAddress1,ul. Kosmonavtov 2-56
+enterPostcode,254367
+enterCity,Vitebsk
+selectCountryFromList,Belarus
+enterEmail,inav_petroff@gmail.com
+enterPhone,+375336547823
+enterPassword,VitebskBelarus
+enterConfirmedPassword,VitebskBelarus
+clickOnCreateAccountButton,

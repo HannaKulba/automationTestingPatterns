@@ -1,0 +1,11 @@
+Keyword_Step,Args
+navigateToProfilePage,http://litecart.stqa.ru/ru/edit_account
+verifyTaxID,
+verifyFirstName,
+verifyLastName,
+verifyAddress1,
+verifyPostcode,
+verifyCity,
+verifyCountry,
+verifyEmail,
+verifyPhone,
